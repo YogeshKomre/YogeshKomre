@@ -1,0 +1,206 @@
+<!-- services.html, about.html, contact.html, and login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="my.css">
+</head>
+<style>.client-logos {
+    background-color: #f8f9fa; /* Set background color */
+    padding: 50px 0; /* Add padding to top and bottom */
+  }
+  
+  .container {
+    max-width: 1200px; /* Set maximum width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .client-logos h2 {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 30px; /* Add space below the heading */
+  }
+  
+  .logo-grid {
+    display: grid; /* Use CSS grid for layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+    gap: 20px; /* Add gap between logos */
+    justify-content: center; /* Center align the logos */
+  }
+  
+  .logo-grid img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }</style>
+  
+  <style>.navbar {
+   background: linear-gradient(to right, #f0af73, #92f5a7); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+    padding-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+  }
+   /* Footer styling */
+.footer {
+  background: linear-gradient(to right, #f0af73, #92f5a7); /* Gradient background */
+    /* Gradient background */
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+
+}</style><style>/* CSS for services section with background image */
+.services {
+  background-image: url('service-background.jpg'); /* Replace 'service-background.jpg' with your image path */
+  background-size: cover; /* Cover the entire section with the background image */
+  background-position: center; /* Center the background image */
+  padding: 100px 0; /* Add padding to the top and bottom */
+  color: #fff; /* Text color */
+}
+
+.services .container {
+  position: relative; /* Set container position to relative for z-index */
+  z-index: 1; /* Ensure content appears above background image */
+}
+
+.services h2 {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 50px; /* Add space below the heading */
+}
+
+.services .service {
+  background-color: rgba(0, 0, 0, 0.7); /* Add semi-transparent background color */
+  padding: 30px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  margin-bottom: 30px; /* Add space between services */
+}
+
+.services .service h3 {
+  margin-bottom: 20px; /* Add space below service title */
+}
+
+.services .service p {
+  line-height: 1.6; /* Set line height for better readability */
+}</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="png_20230531_230146_0000.png" alt="Logo">
+          HomePlaza Consultant
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- Bootstrap JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2024 Home Plaza Consultant. All rights reserved.</p>
+        </div>
+      </footer>
+
+<div class="container mt-5">
+  <h1>SERVICES</h1>
+  <p>This is the content of the page. You can add more sections and content as needed.</p>
+</div><section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>Understanding the needs of our clients</h3>
+        <p>Our team have a deltailed discussion with the clients for a complete update of their requirements, our representatives even visit clients at their office for an in depth understanding of the nature of the job. every point is deeply noted to fulfil clients satisfaction.
+           this facilitates a good working relationship and it results full coordination with the clients.</p>
+      </div>
+      <div class="service">
+        <h3>Advertisements</h3>
+        <p>Following the authorization from our clients, we pulish openings for a particular profession, with complete job description in the leading newspapers and other popular media to receive perfect matching resumes in our databank.</p>
+      </div>
+      <div class="service">
+        <h3>Preescreening</h3>
+        <p>Our recruitments team scans the databank for procuring the details of the candidate. after scrutinizing the resumes and conduting a thorough background check, we carring out a detailed analysis of the job specification and the employee qualification to aviod any mismatching. as per the candidates caliber and experience,they are explained about the related job description in detail by our recruitment team.</p>
+      </div>
+      <div class="service">
+        <h3>Selection panel</h3>
+        <p>The selection panel which is comprised by our highly skilled experts who decides the eligibility of candidates for selection and short listing. our professional experts take full reponsibility of providing the best work force.</p>
+      </div>
+      <!-- Add more services as needed -->
+    </div>
+  </section>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<section class="client-logos">
+    <div class="container">
+      <h2>Our Clients</h2>
+      <div class="logo-grid">
+        <img src="image1.jpeg" alt="Image 1">
+        <img src="image2.jpeg" alt="Image 2">
+        <img src="image3.jpeg" alt="Image 3">
+        <img src="image4.jpeg" alt="Image 4">
+        <img src="image5.jpeg" alt="Image 5">
+        <img src="image6.jpeg" alt="Image 6">
+        <img src="image7.jpeg" alt="Image 7">
+        <img src="image8.jpeg" alt="Image 8">
+        <img src="image9.jpeg" alt="Image 9">
+        <img src="image10.jpeg" alt="Image 10">
+        <img src="image11.jpeg" alt="Image 11">
+        <img src="image12.jpeg" alt="Image 12">
+        <img src="image13.jpeg" alt="Image 13">
+        <img src="image14.jpeg" alt="Image 14">
+        <img src="image15.jpeg" alt="Image 15">
+        <img src="image16.jpeg" alt="Image 16">
+        <img src="image17.jpeg" alt="Image 17">
+        <img src="image18.jpeg" alt="Image 18">
+        <!-- Add more client logos as needed -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>

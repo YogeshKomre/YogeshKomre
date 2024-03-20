@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+  <style>/* Custom CSS for animated login form */
+
+    .animated {
+      animation-duration: 1s;
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+      <div class="card animated fadeInDown">
+        <div class="card-body">
+          <h2 class="text-center mb-4">Login</h2>
+          <form id="login-form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    // You can add your login validation or submission logic here
+    // For demonstration purposes, we'll just log the form data
+    const formData = new FormData(event.target);
+    console.log('Form data:', Object.fromEntries(formData));
+  });
+</script>
+
+</body>
+</html>

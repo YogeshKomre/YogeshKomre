@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomePlsza Consultant</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background: linear-gradient(to right, #34442a, #8aad36);;
+    font-family:  Calibri; 
+    padding-right: 20px; 
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color: white;
+    
+    font-weight: normal;
+    margin-right: 25px;
+}
+.container{
+    padding-top: 150px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+
+}
+body{
+    align-items: center;
+    justify-content: center;
+    background: gray;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px *7));
+    }
+}
+.slider {
+    height: 100px;
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, #34442a, #8aad36)
+}
+.slide-track{
+    display: flex;
+    justify-content: space-evenly;
+}
+.slider .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px *14);
+    
+}
+.slider.slide{
+    height: 100px;
+     width: 250px;
+
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-between ;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h2{
+    display: inline;
+}
+col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ffffff;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: rgb(183, 212, 183) underline ;
+    color: #fff;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.form .fa{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+.form button{
+     background: transparent;
+     border: 0;
+     outline: none;
+     cursor: pointer ;
+}
+form button .fa-solid{
+ font-size: 16x;
+ color: #ccc;
+}
+.social-icons.bxbxl{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width:90% ;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    height: 10%;
+}
+.copyright{
+text-align: center;
+}
+.underline{
+    width: 35%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+.underlinespan{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container img{
+    height: 70px;
+    border-radius: 50%;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(197, 197, 197);
+    display: flex;
+    justify-content: space-between;
+    background: rgb(154, 161, 153);
+}
+.review{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    gap: 9rem;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.te{
+    text-align: center;
+}
+.headfooter{
+    margin-top: 1rem;
+    height:5%;
+    background: var(--col3);
+    text-align: center;
+    padding: 50px 10px;
+    font-size: 20px;
+    
+}
+
+.menubar ul a{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: var(--col2);
+    transition: .2s ease-in;
+}
+.menubar ul a:hover{
+    color: var(--col);
+}
+.sehead{
+    height: auto;
+    }
+  </style>
+  <style>.navbar {
+    
+    background: linear-gradient(to right, #f0af73, #92f5a7); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+    padding-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+  }
+   /* Footer styling */
+.footer {
+  background: linear-gradient(to right, #f0af73, #92f5a7); /* Gradient background */
+   /* Gradient background */
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+
+}</style>
+ <style>
+  /* CSS styles */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+ 
+  img {
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+  }
+  .carousel-item {
+      width: 100%;
+      overflow-x: auto;
+      white-space: nowrap;
+  }
+  .article img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+  .article p {
+      margin-bottom: 20px;
+  }
+  .stats {
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+  }
+</style>
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="png_20230531_230146_0000.png" alt="Logo">
+    HomePlaza Consultant
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="service.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    
+      
+    <header class="sehead">
+        
+        <nav class="menubar">
+            
+        <h2>our client</h2>
+        <footer class="headfooter">
+            <p>Company We've Worked With </p>
+            <fon>It’s a true partnership where a commitment to your success results in continued growth and on-going support of your mission and needs.</fon>
+        </footer>
+    </header>
+    <div class="slider">
+
+     <div class="slide-track">
+        <div class="slide">
+            
+            <img src="image1.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide 1">
+            <img src="image2.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide 2">
+            <img src="image3.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide 3">
+            <img src="image3.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide">
+            <img src="image4.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide">
+            <img src="image5.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide">
+            <img src="image6.jpeg" height="100" width="100" alt=""/>
+        </div>
+        <div class="slide">
+            <img src="image7.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image8.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image9.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image10.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image11.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image12.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image13.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image14.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image15.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image16.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image17.jpeg" height="100" width="100" alt=""/>
+        </div> <div class="slide">
+            <img src="image18.jpeg" height="100" width="100" alt=""/>
+        </div>
+     </div>
+    </div>
+    <section class="review">
+        <div class="container">
+            <p>We provide quality candidates to the job market throughout the GCC & Europe. THe Home Plaza Consultant offers traillored solution according to the needs of our clients. Our focus is on recruiting candidates with the necessary skills and attitudes to support employeer.</p>
+            <div class="name">
+                <img src="office1.webp" alt=""><h2>A Focus On Quality</h2>
+            </div>
+        </div>
+        <div class="container">
+            <p>We are worlds leading recruitment company offering customizee HR services across all sectors <br>We at HOme Plaza Jobs are an expert at finding talent for our more than 300+ clientxs. accorss a countries and territories. As sourcing the best talent becomes more challenging. our clients rely on our expertise even more. to ensure that scalling the human fasctor of their bussiness is not an impediment to growth.</p>
+            <div class="name">
+                <img src="office2.jpg" alt=""><h2>Find The Right Talent Easily</h2>
+            </div>
+        </div>
+        <div class="container">
+            <p>Our ability to capitalise on new thinking new workforce models and new possibillities has made us the most recognized and respected recruitment solutions provides in the world. And our experties, experience and unmatcehd global footprint allow us to deliver solutions to help our clients achieve better bussiness results.
+
+                
+            </p>
+            <div class="name">
+                <img src="office3.htm" alt=""><h2>Our Innovative Recruitment Solutions</h2>
+            </div>
+        </div>
+    </section>
+    
+<hr>
+
+<footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Home Plaza Consultant. All rights reserved.</p>
+    </div>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Auto increment progress bars every second
+        let years = 0;
+        let clients = 0;
+        let candidates = 0;
+        let happy = 0;
+
+        function updateProgressBars() {
+            if (years < 100) {
+                years++;
+                $('#years').css('width', years + '%').attr('aria-valuenow', years);
+            }
+            if (clients < 1000) {
+                clients += 10;
+                $('#clients').css('width', clients + '%').attr('aria-valuenow', clients);
+            }
+            if (candidates < 500) {
+                candidates += 5;
+                $('#candidates').css('width', candidates + '%').attr('aria-valuenow', candidates);
+            }
+            if (happy < 100) {
+                happy++;
+                $('#happy').css('width', happy + '%').attr('aria-valuenow', happy);
+            }
+        }
+
+        setInterval(updateProgressBars, 1000); // Update every second
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Auto slide client images every 3 seconds
+    $('.carousel').carousel({
+        interval: 3000
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

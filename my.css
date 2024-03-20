@@ -1,0 +1,30 @@
+
+ /* Custom CSS */
+
+/* Navbar styling */
+.navbar-brand img {
+  max-height: 40px;
+  padding-right: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+/* Container styling */
+.container {
+  padding: 20px;
+}
+
+ /* Footer styling */
+ .footer {
+    background: linear-gradient(to right, #33ccff, #ff99cc); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
