@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="login.css">
-  <style>/* Custom CSS for animated login form */
-
-    .animated {
-      animation-duration: 1s;
-    }
-    
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3c682;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #103502;
+            border-radius: 5px;
+            background-color: #2c62f5;
+            color: rgb(231, 184, 192);
+        }
+    </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-6">
-      <div class="card animated fadeInDown">
-        <div class="card-body">
-          <h2 class="text-center mb-4">Login</h2>
-          <form id="login-form">
+    <div class="container">
+        <h2 class="mb-4">Job Registration</h2>
+        <form>
             <div class="form-group">
-              <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                <label for="fullName">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
             </div>
             <div class="form-group">
-              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
-          </form>
-        </div>
-      </div>
+            <div class="form-group">
+                <label for="password">Apply For Job Position:</label>
+                <input type="text" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" class="form-control-file" id="resume" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
     </div>
-  </div>
-</div>
 
-<script>
-  document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-    // You can add your login validation or submission logic here
-    // For demonstration purposes, we'll just log the form data
-    const formData = new FormData(event.target);
-    console.log('Form data:', Object.fromEntries(formData));
-  });
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
